@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+.pnp
+.pnp.js
+
+# Next.js build
+.next/
+frontend/.next/
+out/
+frontend/out/
+build/
+frontend/build/
+
+# Environment files (keeps your API keys private)
+.env
+.env*.local
+frontend/.env
+frontend/.env*.local
+
+# SQLite database local files
+frontend/prisma/dev.db
+frontend/prisma/dev.db-journal
+*.db
+*.db-journal
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db

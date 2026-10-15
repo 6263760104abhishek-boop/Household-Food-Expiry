@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model FoodItem {
+  id            Int      @id @default(autoincrement())
+  name          String
+  category      String
+  purchase_date String
+  expiry_date   String
+  is_consumed   Boolean  @default(false)
+  createdAt     DateTime @default(now())
+}
